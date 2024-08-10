@@ -1,0 +1,173 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    background-color: #333;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 28px;
+
+}
+header h1 {
+    color: rgb(8, 196, 8);
+}
+
+header p{
+    color: white;
+    animation-name: scale;
+    animation-duration: 1s;
+}
+.profile-picture{
+    text-align: center;
+    margin-bottom: 28px;
+}
+.profile-picture img{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid green;
+
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 12px;
+
+}
+.about-me h2{
+    text-align: center;
+}
+.about-me, .portfolio{
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 24px;
+    margin-bottom: 28px;
+}
+.about-me h2, .portfolio h2{
+    color: rgb(22, 194, 22);
+    
+} 
+.skills{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.skills h3{
+    color:  rgb(8, 196, 8);
+}
+.skills img{
+    width: 48px;
+    height: 48px;
+}
+.portfolio{
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 24px;
+    margin-bottom: 28px;
+
+}
+.cards-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.cards-container .each-card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.each-card, .card-content{
+    background-color: #ddd;
+}
+.each-card img{
+    width: 200px;
+    height: 200px;
+}
+.each-card h3{
+    color: rgb(22, 194, 22);
+}
+.contact-form{
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    
+}
+.contact-form h2{
+    margin-bottom: 36px;
+    color:  rgb(22, 194, 22);
+    text-align: center;
+}
+.contact-form input, .contact-form textarea, .contact-form button{
+    display: block;
+    width: 96%;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.contact-form button{
+    background-color: rgb(3, 165, 3);
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.contact-form button:hover{
+    background-color: rgb(3, 146, 3);
+}
+.social-media{
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.social-media h2{
+    color:rgb(22, 194, 22);
+}
+.social-media a{
+    text-decoration: none;
+    margin-right: 28px;
+    font-size: 18px;
+    background: linear-gradient(white, green);
+    color: black;
+}
+.social-media a:hover{
+    opacity: 0.8;
+}
+footer{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+footer p{
+    color: white;
+}
+
+/* Responsive website*/
+@media (max-width: 768px) {
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contact-form{
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .contact-form input, 
+    .contact-form textarea, 
+    .contact-form button{
+        width: 96%;
+    }
+}
